@@ -135,4 +135,29 @@
   display: none;
 }
 
+// hero start
+
+.hero{
+  background: url(../img/desktop.svg) no-repeat right bottom;
+  height: 100vh;
+  min-height: 800px;
+}
+
+.hero__body{
+  margin-top: 50px;
+}
+
+.about{
+  max-width: 600px;
+}
+
+.about__title{
+  line-height: 70px;
+  font-size: 50px;
+  font-weight: 500;
+  span{
+    color: $color-m;
+  }
+}
+
 @import "adaptive";
