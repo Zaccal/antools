@@ -24,3 +24,13 @@ arrowFall.addEventListener('click', () => {
 })
 
 
+const header = document.querySelector('.header')
+
+document.addEventListener('scroll', () => {
+    const scroll_position = window.scrollY;
+	if (scroll_position > 250) {
+		header.style.backgroundColor = '#29323c';
+	} else {        
+		header.style.backgroundColor = 'transparent';
+	}
+})

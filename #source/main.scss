@@ -5,12 +5,13 @@
   min-height: 70px;
   position: fixed;
   top: 0;
+  transition: 0.3s;
 }
 
 
 .header__body{
   @extend %flex-full;
-  padding: 31px 0;
+  padding: 15px 0;
 }
 
 .logo__link{
@@ -144,7 +145,7 @@
 }
 
 .hero__body{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .about{
@@ -158,6 +159,41 @@
   span{
     color: $color-m;
   }
+}
+
+.about__subtitle{
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 31px 0 57px;
+}
+
+.form__body{
+  padding: 0 18px;
+  border: 1px solid #272e33;
+  background-color: #283036;
+  border-radius: 15px;
+  max-width: 497.66px;
+  @extend %flex-full;
+}
+
+.form__find{
+  color: rgba(255, 255, 255, 0.38);
+  width: 100%;
+  padding: 21px 0 21px 35px;
+  background: url(../img/search.svg) no-repeat left center;
+  border: 0;
+}
+
+.form__btn{
+  padding: 12px 26px;
+}
+
+.hero__icons{
+  max-width: 190px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1px;
+  margin-top: 110px;
 }
 
 @import "adaptive";
