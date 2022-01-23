@@ -34,3 +34,11 @@ document.addEventListener('scroll', () => {
 		header.style.backgroundColor = 'transparent';
 	}
 })
+
+const hearts = document.querySelectorAll('.heart')
+
+for (let heart of hearts) {
+    heart.addEventListener('click', () => {
+        heart.classList.toggle('active')
+    })
+}

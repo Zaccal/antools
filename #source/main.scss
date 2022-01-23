@@ -6,12 +6,13 @@
   position: fixed;
   top: 0;
   transition: 0.3s;
+  z-index: 2;
 }
 
 
 .header__body{
   @extend %flex-full;
-  padding: 15px 0;
+  padding: 26px 0;
 }
 
 .logo__link{
@@ -116,7 +117,7 @@
 .btn{
   background-color: $color-m;
   border-radius: 8px;
-  padding: 12px 28px;
+  padding: 8px 28px;
   color: #fff;
   transition: 0.3s;
   &:hover{
@@ -156,8 +157,11 @@
   line-height: 70px;
   font-size: 50px;
   font-weight: 500;
-  span{
+  .title-color{
     color: $color-m;
+  }
+  span{
+    display: inline-block;
   }
 }
 
@@ -165,11 +169,11 @@
   font-size: 18px;
   color: rgba(255, 255, 255, 0.55);
   margin: 31px 0 57px;
+  line-height: 30px;
 }
 
 .form__body{
   padding: 0 18px;
-  border: 1px solid #272e33;
   background-color: #283036;
   border-radius: 15px;
   max-width: 497.66px;
@@ -194,6 +198,110 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1px;
   margin-top: 110px;
+}
+
+// most
+
+.most__about{
+  margin: 0 auto 90px;
+  text-align: center;
+  max-width: 455px;
+}
+
+.most__subtitle{
+  max-width: 335px;
+  line-height: 157%;
+  margin: 25px auto;
+}
+
+.most__po{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 100px;
+}
+
+.most__item{
+  border-radius: 15px;
+  transition: 0.3s;
+  max-width: 359px;
+  padding: 33px;
+  &:hover{
+    background: rgba(40, 48, 54, 0.6);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 10px #333;
+    transform: scale(1.1, 1.1);
+    .most__po-price{
+        color: rgba(255, 165, 55, 1)
+    }
+  }
+}
+
+.most__header{
+  @extend %flex-full;
+  max-width: 170px;
+  margin-bottom: 25px;
+}
+
+.most__po-icon{
+  max-height: 64px;
+}
+
+.most__po-name{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.most__po-price{
+  color: rgba(255, 165, 55, 0.55)
+}
+
+.heart{
+  width: 28px;
+  height: 28px;
+  padding: 18px;
+  background: url(../img/heart.svg) no-repeat center;
+  border-radius: 8px;
+  &.active{
+    background: url(../img/heartRed.svg) no-repeat center;
+    box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+  }
+}
+
+.most__footer{
+  margin-top: 25px;
+  @extend %flex-full;
+}
+
+.most__add{
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  padding: 18px;
+  background: url(../img/add.svg) no-repeat center;
+  background-size: 22px;
+}
+
+.most__like{
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  max-width: 96px;
+}
+
+.most__item_vscode{
+  .most__po-icon{
+    max-width: 46px;
+  }
+}
+
+.most__item_invision{
+  .most__po-icon{
+    max-width: 50px;
+  }
 }
 
 @import "adaptive";
