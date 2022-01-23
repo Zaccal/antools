@@ -1,0 +1,70 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+%flex-full {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-master {
+  display: flex;
+  justify-content: space-between;
+}
+
+$color-m: #FF6E30;
+$color-null: rgba(255, 255, 255, 0.78);
+
+html, body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #1E252B;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.container{
+  max-width: 1234px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 50px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: #fff;
+  font-size: 48px;
+  line-height: 70px;
+  font-weight: 500;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: $color-null;
+}
+
+input[type="submit"], input[type="button"], button{
+  cursor: pointer;
+  border: 0;
+}
+
+section{
+  padding: 200px 0;
+}

@@ -1,0 +1,138 @@
+@import "null";
+
+.header {
+  width: 100%;
+  min-height: 70px;
+  position: fixed;
+  top: 0;
+}
+
+
+.header__body{
+  @extend %flex-full;
+  padding: 31px 0;
+}
+
+.logo__link{
+  @extend %flex-full;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: $color-null;
+  position: relative;
+  z-index: 2;
+  img{
+    padding-right: 12px;
+  }
+}
+
+.menu{
+  transition: 0.3s;
+}
+
+.menu__list{
+  @extend %flex-full;
+  & > li + li {
+    margin-left: 42px;
+  }
+  & li:hover .menu__inner-list {
+    display: block;
+  }
+  li:hover{
+    span{
+      transform: rotate(180deg);
+    }
+  }
+  & > li:nth-child(2) {
+    margin-right: 18px;
+  }
+}
+
+.menu__link, .menu__inner-link{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.55);
+  transition: 0.3s;
+  &:hover{
+    color: #fff;
+  }
+}
+
+.menu__link_fall{
+  position: relative;
+}
+
+.menu__inner-list{
+  display: none;
+  position: absolute;
+  top: 68px;
+  background-color: #323C45;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  li{
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      background-color: #23292E;
+      .menu__inner-link{
+        color: #fff;
+      }
+    }
+    padding: 7px 15px;
+  }
+}
+
+.menu__link_fall{
+  position: relative;
+  span{
+    position: absolute;
+    top: 3px;
+    background: url('../img/arrow.svg') no-repeat center;
+    width: 18px;
+    height: 18px;
+    transition: 0.3s;
+  }
+}
+
+.mobile-arrow{
+  width: 46px;
+  height: 46px;
+  border-top: 2px solid gray;
+  transform: rotate(-90deg);
+}
+
+.sign{
+  position: relative;
+  z-index: 2;
+  @extend %flex-full;
+}
+
+.burger{
+  display: none;
+}
+
+.btn{
+  background-color: $color-m;
+  border-radius: 8px;
+  padding: 12px 28px;
+  color: #fff;
+  transition: 0.3s;
+  &:hover{
+    box-shadow: 0px 0px 10px rgba(255, 110, 48, 1);
+  }
+}
+
+.sign__btn{
+  margin-right: 41px;
+  transition: 0.3s;
+  &:hover{
+    color: $color-m;
+  }
+}
+
+.arrow-fall{
+  display: none;
+}
+
+@import "adaptive";
