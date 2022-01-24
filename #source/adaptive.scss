@@ -197,7 +197,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         row-gap: 50px;
-        column-gap: 10px;
+        column-gap: 20px;
     }
     .most__item{
         max-width: 362px;
@@ -223,5 +223,32 @@
 @media screen and (max-width: 384px) {
     .most__like{
         padding-right: 5px;
+    }
+    .brand__company{
+        max-width: 140px;
+    }
+    .brand .brand__row{
+        max-width: 140px;
+    }
+}
+
+@media screen and (max-width: 1078px) {
+    .brand__row{
+        grid-template-columns: repeat(2, auto);
+        max-width: 453px;
+        margin: 0 auto;
+        grid-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .brand__row{
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+        max-width: 193px;
+    }
+    .brand__title{
+        font-size: 20px;
+        line-height: 28px;
     }
 }

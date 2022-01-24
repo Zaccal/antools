@@ -334,4 +334,30 @@
   }
 }
 
+.brand__body{
+  background: url(../img/effect.png) no-repeat left top,rgba(44, 53, 61, 0.2);
+  backdrop-filter: blur(50px);
+  border-radius: 25px;
+  padding: 55px 83px;
+  width: 100%;
+}
+
+.brand__title{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  color: $color-null;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.brand__row{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.brand__company{
+  max-width: 193px;
+}
+
 @import "adaptive";
