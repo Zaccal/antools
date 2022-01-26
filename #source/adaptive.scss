@@ -188,6 +188,9 @@
             box-shadow: 0px 0px 10px rgba(255, 110, 48, 1);
         }
     }
+    .tools__po{
+        margin-right: 20px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -250,5 +253,24 @@
     .brand__title{
         font-size: 20px;
         line-height: 28px;
+    }
+    .tools .tools__po{
+        padding: 0 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .tools__body{
+        flex-direction: column;
+    }
+    .tools__about{
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .tools__po{
+        margin-right: 0;
+        padding: 0 10px;
     }
 }
