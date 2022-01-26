@@ -1,6 +1,10 @@
 new WOW().init()
 
 $(document).ready(function() {
+    $('.slider').slick({
+        dots: true,
+        infinite: false,
+    })
 })
 
 const arrow = document.querySelector('.menu__link_fall span')
