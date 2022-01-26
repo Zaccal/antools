@@ -4,6 +4,14 @@ $(document).ready(function() {
     $('.slider').slick({
         dots: true,
         infinite: false,
+        responsive: [
+            {
+                breakpoint: 410,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     })
 })
 
