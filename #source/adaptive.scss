@@ -5,7 +5,7 @@
     .menu{
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -315%;
         &.active{
             overflow: scroll;
             transition: 0.3s;
@@ -30,9 +30,8 @@
             }
             &:nth-child(2) {
                 margin-right: 0;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                display: grid;
+                grid-template-columns: 13fr 1fr;
             }
         }
         li + li {
@@ -113,8 +112,11 @@
     }
     .menu__inner-list.active{
         display: block;
-        top: 280px;
+        position: relative;
+        top: 0;
         width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
         & li {
             padding: 20px;
         }
@@ -224,6 +226,17 @@
     .slick-dots{
         margin: 50px auto;
     }
+    .email__body{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .email__pole{
+        padding-left: 0;
+        text-align: center;
+    }
+    .email__btn{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 384px) {
@@ -292,7 +305,7 @@
         flex-direction: column;
     }
     .tools__about{
-        margin-bottom: 60px;
+        margin-bottom: 80px;
         text-align: center;
     }
     .tools__po{
@@ -300,6 +313,33 @@
         padding: 0 10px;
     }
     .slider__person{
-        max-width: 310px;
+        max-width: 305px;
+    }
+}
+
+@media screen and (max-width: 336px) {
+    .most__po{
+        margin: 0 32px;
+    }
+    .most__item{
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .footer__row{
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 244px;
+        text-align: center;
+    }
+    .footer__col {
+        + .footer__col {
+            margin-top: 40px;
+        }
+    }
+    .footer__logo{
+       margin: 0 auto;
     }
 }
