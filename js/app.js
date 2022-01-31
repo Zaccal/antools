@@ -54,3 +54,5 @@ for (let heart of hearts) {
         heart.classList.toggle('active')
     })
 }
+
+// end
