@@ -110,10 +110,14 @@
             border-right: 1px solid #5a6971;            
         }
     }
+    .menu__inner-list{
+        left: -200%;
+    }
     .menu__inner-list.active{
         display: block;
         position: relative;
         top: 0;
+        left: 0;
         width: 100%;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -124,6 +128,9 @@
 }
 
 @media screen and (max-width: 450px) {
+    .tools__about  .tools__btn{
+        padding: 10px 25px;
+    }
     .sign__btn{
         margin-right: 25px;
     }
@@ -145,9 +152,6 @@
     }
     .form__btn{
         padding: 14px 26px;
-    }
-    .form__find{
-        font-size: 11px;
     }
     .hero__icons{
         margin-top: 90px;
@@ -241,7 +245,7 @@
 
 @media screen and (max-width: 384px) {
     .most__like{
-        padding-right: 5px;
+        padding-right: 10px;
     }
     .brand__company{
         max-width: 140px;

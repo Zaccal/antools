@@ -90,6 +90,7 @@
   span{
     position: absolute;
     top: 3px;
+    left: 93px;
     background: url('../img/arrow.svg') no-repeat center;
     width: 18px;
     height: 18px;
@@ -266,6 +267,10 @@
 
 .most__po-price{
   color: rgba(255, 165, 55, 0.55)
+}
+
+.most__subtitls {
+  font-size: 12px;
 }
 
 .heart{
